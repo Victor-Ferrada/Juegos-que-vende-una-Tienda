@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resumen de Ventas</title>
+    <link rel="icon" href='./img/icono.png'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resumen">
+        <div id="resumen" class="controls"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            let totalVentas = localStorage.getItem('totalVentas');
+            document.getElementById('resumen').innerHTML = `Caja total vendida: ${totalVentas}`;
+        }
+    </script>
+</body>
+</html>

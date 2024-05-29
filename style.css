@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('./img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 150%;
+}
+
+.form-regis {
+    width: 90%;
+    max-width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.resumen {
+    width: 90%;
+    max-width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Anonymous Pro', monospace;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form-regis h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.form-regis p {
+    height: 40px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.form-regis .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #24303c;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+table, th, td {
+    border: 1px solid white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: #1b2024;
+    padding: 10px;
+    border: 1px solid white;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: -1px;  
+    box-shadow: 7px -7px 37px #000;
+}
+@media (max-width: 600px) {
+    .form-regis {
+        margin-top: 20px;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: 100% 150%;
+    }
+}

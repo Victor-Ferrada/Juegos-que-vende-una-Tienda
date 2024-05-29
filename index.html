@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Venta juegos</title>
+    <link rel="icon" href='./img/icono.png'>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <div id="contenedor">
-        <div id="central">
-            <div id="login">
-                <div class="titulo">Bienvenido</div>
-                <form id="loginform">
-                    <input type="text" name="usuario" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña" name="password">
-                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                </form>
-                <div class="error" id="error"></div>
-            </div>
-        </div>
-    </div>
+    <form class="form-regis" id="productForm" onsubmit="event.preventDefault(); addProduct();">
+        <h4>VENTA DE JUEGO</h4>
+        <p>Nombre del juego:</p>
+        <input class="controls" type="text" id="producnom" name="producnom" required placeholder="Juego vendido">
+        <p>Valor del juego:</p>
+        <input class="controls" type="number" id="productValue" name="productValue" required placeholder="Valor del juego">
+        <p>Cantidad vendida</p>
+        <input class="controls" type="number" id="productQuantity" name="productQuantity" required placeholder="Ingrese la cantidad vendida">
+        <button class="botons" type="submit" value="guardar">Agregar Venta</button>
+        <button class="botons" type="button" id="totalCompra" value="resumen-venta">Total Compra</button>
+        <button class="botons" type="button" values="otrapg" onclick="abrirNuevaPagina()">Caja total</button>
+        <div id="resumen-venta"></div>
+        <div id="total-compra"></div>
+        <div id="ventas-totales"></div>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>
